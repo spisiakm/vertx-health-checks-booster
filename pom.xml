@@ -5,7 +5,7 @@
   <parent>
     <groupId>io.openshift</groupId>
     <artifactId>booster-parent</artifactId>
-    <version>8</version>
+    <version>9</version>
   </parent>
 
   <groupId>io.openshift.booster</groupId>
@@ -123,6 +123,13 @@
                   <goal>resource</goal>
                   <goal>build</goal>
                 </goals>
+                <configuration>
+                  <enricher>
+                    <excludes>
+                      <exclude>f8-maven-scm</exclude>
+                    </excludes>
+                  </enricher>
+                </configuration>
               </execution>
             </executions>
           </plugin>
@@ -147,13 +154,6 @@
           </plugin>
         </plugins>
       </build>
-    </profile>
-
-    <profile>
-      <id>redhat</id>
-      <properties>
-        <vertx.version>3.4.2.redhat-3</vertx.version>
-      </properties>
     </profile>
   </profiles>
 </project>
