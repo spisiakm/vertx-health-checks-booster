@@ -2,11 +2,8 @@ package io.openshift.booster;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
-import io.fabric8.openshift.client.OpenShiftClient;
-import io.openshift.booster.test.OpenShiftTestAssistant;
 import org.arquillian.cube.openshift.impl.enricher.RouteURL;
 import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.arquillian.test.api.ArquillianResource;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
