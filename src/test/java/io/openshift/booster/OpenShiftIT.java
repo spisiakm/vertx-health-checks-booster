@@ -24,7 +24,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 @RunWith(Arquillian.class)
 public class OpenShiftIT {
 
-  @RouteURL("${application.name}")
+  @RouteURL("${app.name}")
   private URL route;
 
   @Before
